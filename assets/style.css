@@ -4,39 +4,94 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     outline: none;
+    box-sizing: border-box;
 }
-
 body{
-    width: 100%;
-    height: 100%;
-    background: #5918AD;
-}
-
-.container{
+    display: flex;
     width: 100%;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
+    background: #efefef;
 }
+
+ul{width: 100%;}
+i{cursor: pointer;}
 
 .box-content{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-    width: 440px;
-    background-color: #fff;
+    min-width:400px;
+    gap: 20px;
+    /* background-color: #f3fefe; */
     padding: 50px;
     border-radius: 25px;
-}
-
-.box-content h1 img{
-    width: 17px;
-    padding-right: 10px;
 }
 
 .box-content h1{
     font-size: 24px;
     font-weight: 700;
+}
+
+.icon-list{
+    width: 30px;
+    padding-right: 10px;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+}
+
+.input-task{
+    height:40px;
+    width: 100%;
+    border: solid 1px #ededed;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.btn-task{
+background-color: #EB7303;
+border:none;
+padding: 8px 10px;
+height: 40px;
+width: 40px;
+border-radius: 50%;
+margin-left: -34px;
+cursor: pointer;
+}
+
+.btn-task:hover{
+    background: rgb(242, 122, 9);
+}
+
+.btn-task > i{
+    color:#fff;
+}
+
+.task-item{    
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    padding: 5px 20px;
+    min-height:40px;
+    background-color: #fff;
+    border: solid 1px #ededed;
+    border-radius: 25px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.git-name{
+    margin-top: 100px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #5b5b5b;
 }
