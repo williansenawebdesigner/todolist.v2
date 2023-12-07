@@ -1,6 +1,6 @@
 //variaveis
 const inputTask = document.querySelector(".input-task")
-// const btnTask = document.querySelector(".btn-task")
+const btnTask = document.querySelector(".btn-task")
 // const listTask = document.querySelector(".list-task")
 
 //adicionar as tarefas
@@ -16,9 +16,16 @@ document.querySelector(".btn-task").onclick = function() {
     }
 }
 
-
-
-
+// adicionar tarefa com clique no enter
+document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+    
+        var btn = document.querySelector(".btn-task");
+      
+      btn.click();
+    
+    }
+  });
 
 // function addTask () {
 //     `<li class="task-item"><i class="fa-regular fa-circle"></i> ${inputTask} <i class="fa-solid fa-x"></i></li>`;
