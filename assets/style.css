@@ -25,7 +25,6 @@ i{cursor: pointer;}
     align-items: center;
     min-width:400px;
     gap: 20px;
-    /* background-color: #f3fefe; */
     padding: 50px;
     border-radius: 25px;
 }
@@ -87,6 +86,7 @@ cursor: pointer;
     border-radius: 25px;
     list-style: none;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .git-name{
