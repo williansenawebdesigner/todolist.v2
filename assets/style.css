@@ -15,7 +15,7 @@ body{
     background: #efefef;
 }
 
-ul{width: 100%;}
+ul{width: 100%; cursor: pointer;}
 i{cursor: pointer;}
 
 .box-content{
@@ -95,3 +95,6 @@ cursor: pointer;
     text-decoration: none;
     color: #5b5b5b;
 }
+
+.completed{
+text-decoration: line-through;}

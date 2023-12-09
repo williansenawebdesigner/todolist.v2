@@ -12,19 +12,23 @@ document.querySelector(".btn-task").onclick = function() {
     else{
         document.querySelector(".list-task").innerHTML += 
         `
-            <li class="task-item"> <i class="fa-regular fa-circle"></i>
+        <div id="tasks" class=" ">
+            <li class="task-item"> <i class="task fa-regular fa-circle"></i>
                 ${document.querySelector(".input-task").value} 
                 <i class="fa-solid fa-x delete"></i></li>
-           
-            
+        </div>
         `
-
+        
         // remover tarefas
-        const current_task = document.querySelectorAll(".delete");
-        for(const i=0; i<current_task.length; i++){
-            current_task[i].onclick = function (){
-                this.parentNode.remove()
+        const current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
             }
+        }
+        // completed task
+        document.querySelector(".task-item").onclick = function() {
+            this.classList.toggle('completed');
         }
     }
 }
@@ -39,8 +43,3 @@ document.addEventListener("keypress", function(e) {
     
     }
   });
-
-// function addTask () {
-//     `<li class="task-item"><i class="fa-regular fa-circle"></i> ${inputTask} <i class="fa-solid fa-x"></i></li>`;
-//     listTask.insertAdjacentHTML("berforeend", addTask);
-// }
